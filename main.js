@@ -51,5 +51,10 @@ const cardkitten3 = `<li class="card">
             </p>
             </li>`;
 
-list.innerHTML = cardkitten3;
+  list.innerHTML = cardkitten3;
+
+
+list.innerHTML = cardkitten1 + cardkitten2 + cardkitten3;
+
+
 
