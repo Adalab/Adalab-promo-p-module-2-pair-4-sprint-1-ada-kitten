@@ -26,8 +26,16 @@ const kittenName3 = "Cielo";
 const KittenImage3 = "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_39/3021711/190923-cat-pet-stock-cs-1052a.jpg";
 const kittenRace3 = "British Shorthair";
 const kittenDesc3 = "Risueño, juguetón, cariñoso, le gusta estar tranquilo y que nadie le moleste. Es una maravilla acariciarle!";
-
-
+if (formElement.classList.contains('collapsed')) {
+  formElement.classList.remove("collapsed");
+  
+} else {
+  formElement.classList.add("collapsed");
+}
+const find = document.querySelector(".js-plus");
+const form = document.querySelector(".new-form");
+find.addEventListener ("click",()=>{form.classList.toggle("collapsed")})
+if( kittenDesc1.includes(descrSearchText) ) {
   listName.innerHTML += `<li class="card">
               <article>
                 <img src =" ${kittenImage1}"
@@ -40,6 +48,8 @@ const kittenDesc3 = "Risueño, juguetón, cariñoso, le gusta estar tranquilo y 
               </article>
             </li>`;
   
+ }
+ if( kittenDesc2.includes(descrSearchText) ) {
   listName.innerHTML += `<li class="card"> 
   <article>
                 <img src =" ${kittenImage2}"
@@ -52,7 +62,9 @@ const kittenDesc3 = "Risueño, juguetón, cariñoso, le gusta estar tranquilo y 
               </article>
             </li>`;
   
-  
+ }
+
+ if( kittenDesc3.includes(descrSearchText) ) {
   listName.innerHTML += `<li class="card">
   <article>
                 <img src =" ${KittenImage3}">
@@ -64,6 +76,16 @@ const kittenDesc3 = "Risueño, juguetón, cariñoso, le gusta estar tranquilo y 
                 </p>
               </article>
             </li>`;
+ 
+ }
+
+
+  
+  
+  
+  
+  
+  
   
  
 
